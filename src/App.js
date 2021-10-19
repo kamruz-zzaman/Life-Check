@@ -14,6 +14,7 @@ import Appointament from './Component/Appointment/Appointament';
 import SuccessApoint from './Component/Appointment/SuccesApoint/SuccessApoint';
 import Details from './Component/MoreDetails/Dtails/Dtails';
 import Support from './Component/Support/Support';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -45,15 +46,15 @@ function App() {
           <Route path='/specialist'>
             <FullDoctors></FullDoctors>
           </Route>
-          <Route path='/appoint'>
+          <PrivateRoute path='/appoint'>
             <Appointament></Appointament>
-          </Route>
+          </PrivateRoute>
           <Route path='/success'>
             <SuccessApoint></SuccessApoint>
           </Route>
-          <Route path='/detail/:id'>
+          <PrivateRoute path='/detail/:id'>
             <Details></Details>
-          </Route>
+          </PrivateRoute>
           <Route path='/support'>
             <Support></Support>
           </Route>
