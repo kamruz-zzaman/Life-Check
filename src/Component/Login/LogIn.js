@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import useAuth from '../../Hooks/useAuth';
+// import useAuth from '../../Hooks/useAuth';
+import useFirebase from '../../Hooks/useFirebase';
 import logo from '../../Images/Logo/Logo.png'
 
 const LogIn = () => {
     const history = useHistory();
-    const { user, isLoading, signinWithGoogle, signInWithEmail } = useAuth();
+    const { user, isLoading, signinWithGoogle, signInWithEmail } = useFirebase();
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -32,13 +34,10 @@ const LogIn = () => {
                 </div>
                 <input onChange={saveEmail} className='bg-transparent border border-red-500 p-2 m-1 rounded-lg w-full' type="email" name="email" placeholder='Emal' /><br />
                 <input onChange={savePassword} className='bg-transparent border border-red-500 p-2 m-1 rounded-lg w-full' type="password" name="pass" placeholder='Password' /><br />
-                <button onSubmit={handleLogin} className='bg-red-500 w-full m-2 p-2 rounded-lg hover:bg-red-800'>LogIn</button>
+                <button onClick={handleLogin} className='bg-red-500 w-full m-2 p-2 rounded-lg hover:bg-red-800'>LogIn</button>
                 <p className='text-center'>Didn't have account? <Link to='/signup' className='text-blue-600'>SignUp</Link></p>
                 <div className='text-center mt-5'>
-                    {/* <p className='text-pink-900'>OR, LogIn with</p> */}
-                    {/* <button ><i className="fab fa-facebook m-1 sm:text-xl md:text-2xl lg:text-4xl hover:text-blue-500"></i></button> */}
                     <button onClick={signinWithGoogle}><i className="fab fa-google m-2 sm:text-xl md:text-2xl lg:text-4xl hover:text-green-500 "></i></button>
-                    {/* <button ><i className="fab fa-github m-1 sm:text-xl md:text-2xl lg:text-4xl hover:text-gray-500"></i></button> */}
                 </div>
             </div>
         </div>

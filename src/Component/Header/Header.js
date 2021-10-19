@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 import logo from '../../Images/Logo/Logo.png'
 
@@ -10,15 +10,19 @@ const Header = () => {
             <div className="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">
                 <Link to='/home'><img src={logo} alt="" /></Link>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <Link className='hover:bg-blue-700 text-white m-2 px-3 py-2 rounded-md' to='/home'>Home</Link>
-                    <Link className='hover:bg-blue-700 text-white m-2 px-3 py-2 rounded-md' to='/services'>Services</Link>
-                    <Link className='hover:bg-blue-700 text-white m-2 px-3 py-2 rounded-md' to='/specialist'>Specialist</Link>
-                    <Link className='hover:bg-blue-700 text-white m-2 px-3 py-2 rounded-md' to='/support'>Supports</Link>
+                    <NavLink className='hover:bg-blue-700 text-white m-2 px-3 py-2 rounded-md' to='/home'
+                        activeClassName="bg-blue-700 text-white m-2 px-3 py-2 rounded-md"> Home</NavLink>
+                    <NavLink className='hover:bg-blue-700 text-white m-2 px-3 py-2 rounded-md' to='/services'
+                        activeClassName="bg-blue-700 text-white m-2 px-3 py-2 rounded-md"> Services</NavLink>
+                    <NavLink className='hover:bg-blue-700 text-white m-2 px-3 py-2 rounded-md' to='/specialist'
+                        activeClassName="bg-blue-700 text-white m-2 px-3 py-2 rounded-md"> Specialist</NavLink>
+                    <NavLink className='hover:bg-blue-700 text-white m-2 px-3 py-2 rounded-md' to='/support'
+                        activeClassName="bg-blue-700 text-white m-2 px-3 py-2 rounded-md"> Supports</NavLink>
                 </nav>
                 {
                     user.email ?
                         <div className='flex items-center'>
-                            <img className='rounded-full w-8 h-8' src={user.photoURL} alt="" />
+                            <img className='rounded-full w-8 h-8' src={user.photoURL || 'https://i.ibb.co/fScLdY0/pic-1171831236-1.png'} alt="" />
                             <p className='text-white mx-1'>{user.displayName || user.email}</p>
                             <button onClick={logOut} className='bg-blue-400 text-white px-3 py-2 rounded-md hover:bg-blue-700 m-2'>LogOut</button>
                         </div>

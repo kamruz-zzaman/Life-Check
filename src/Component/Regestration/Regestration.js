@@ -29,7 +29,7 @@ const Regestration = () => {
                 <input onChange={saveEmail} className='bg-transparent border border-red-500 p-2 m-1 rounded-lg w-full' type="email" name="email" placeholder='Emal' /><br />
                 <input onChange={savePassword} className='bg-transparent border border-red-500 p-2 m-1 rounded-lg w-full' type="password" name="pass" placeholder='Password' /><br />
                 {/* <input className='bg-transparent border border-red-500 p-2 m-1 rounded-lg w-full' type="password" name="confirm pass" placeholder='Confirm Password' /> */}
-                <button onSubmit={handleRegistration} className='bg-red-500 w-full m-2 p-2 rounded-lg hover:bg-red-800'>SignUp</button>
+                <button onClick={handleRegistration} className='bg-red-500 w-full m-2 p-2 rounded-lg hover:bg-red-800'>SignUp</button>
                 <p>Already have an account? <Link to='/login' className='text-blue-600'>SignIn</Link></p>
                 <div className='text-center mt-5'>
                     <p className='text-pink-900'>OR, SignUp with</p>
