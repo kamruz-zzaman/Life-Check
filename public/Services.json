@@ -4,8 +4,8 @@
     "CoverImg": "https://i.ibb.co/wrnKxnL/3d-illustration-of-a-cancer-cell-and-lymphocytes.jpg",
     "Title": "Cancer Center",
     "Description1": "A medical team made up of specialists from many different fields and medical professionals with expertise in cancer",
-    "Description2": "Provides comprehensive cancer care and treatment",
-    "Description3": "Offers precision in diagnosis and treatment of all cancers",
+    "Description2": "-Provides comprehensive cancer care and treatment",
+    "Description3": "-Offers precision in diagnosis and treatment of all cancers",
     "DescriptImg": "https://i.ibb.co/HzmpLTZ/d1.jpg"
   },
   {
@@ -13,7 +13,7 @@
     "CoverImg": "https://i.ibb.co/rf1Y9nd/2.jpg",
     "Title": "Joint Replacement Center",
     "Description1": "Using the latest advanced surgical technology to treat Complex joint problems",
-    "Description2": "Provides rehabilitation and pain management to provide faster recovery for patients",
+    "Description2": "-Provides rehabilitation and pain management to provide faster recovery for patients",
     "DescriptImg": "https://i.ibb.co/gJmwkq5/d-1.jpg"
   },
   {
@@ -21,8 +21,8 @@
     "CoverImg": "https://i.ibb.co/NrTJg89/3.jpg",
     "Title": "Heart (Cardiology) Center",
     "Description1": "Employs comprehensive and holistic approaches to heart health",
-    "Description2": "Treats over 3,000 cardiac cases a month, of which approximately 1,000 are non-invasive procedures",
-    "Description3": "Verified to be at or above international standards for diagnosing and treating cardiac conditions",
+    "Description2": "-Treats over 3,000 cardiac cases a month, of which approximately 1,000 are non-invasive procedures",
+    "Description3": "-Verified to be at or above international standards for diagnosing and treating cardiac conditions",
     "DescriptImg": "https://i.ibb.co/W0W8vnx/d-3.jpg"
   },
   {
@@ -30,8 +30,8 @@
     "CoverImg": "https://i.ibb.co/XbNvnr1/4.jpg",
     "Title": "Spine Institute",
     "Description1": "Provides advanced, comprehensive medical treatment",
-    "Description2": "Uses the latest advanced technology in both surgical and non-surgical procedures",
-    "Description3": "Has a team of  top experts and spine specialists",
+    "Description2": "-Uses the latest advanced technology in both surgical and non-surgical procedures",
+    "Description3": "-Has a team of  top experts and spine specialists",
     "DescriptImg": "https://i.ibb.co/8Dpgf1S/d-4.jpg"
   },
   {
@@ -39,8 +39,8 @@
     "CoverImg": "https://i.ibb.co/D9NT5sf/A-medical-worker-shows-the-spine-on-blurred-background.jpg",
     "Title": "Orthopedic Center",
     "Description1": "State-of-the-art diagnostic, non-invasive, non-surgical and surgical orthopedic services",
-    "Description2": "Offers a complete range of diagnostic, therapeutic and surgical orthopedic services",
-    "Description3": "Dedicated team of experts in surgical and medical orthopedics",
+    "Description2": "-Offers a complete range of diagnostic, therapeutic and surgical orthopedic services",
+    "Description3": "-Dedicated team of experts in surgical and medical orthopedics",
     "DescriptImg": "https://i.ibb.co/NLj9Vwt/d-5.jpg"
   },
   {
@@ -48,8 +48,8 @@
     "CoverImg": "https://i.ibb.co/86dFNBB/6.jpg",
     "Title": "Nephrology (Kidney) Center",
     "Description1": "Has a team of locally accredited nephrologists working closely with nutritionists, pharmacists and clinical nurse coordinators",
-    "Description2": "Offers pharmaceutical care for kidney disease patients who usually take several medications together",
-    "Description3": "Uses the latest advanced technology in both diagnostics and treatment procedures",
+    "Description2": "-Offers pharmaceutical care for kidney disease patients who usually take several medications together",
+    "Description3": "-Uses the latest advanced technology in both diagnostics and treatment procedures",
     "DescriptImg": "https://i.ibb.co/pyQnrMx/d-6.jpg"
   },
   {
@@ -57,7 +57,7 @@
     "CoverImg": "https://i.ibb.co/7bSg701/7.jpg",
     "Title": "Liver Center",
     "Description1": "Uses the latest medical technology and equipment to deliver the best care for all patients in the Liver Center",
-    "Description2": "Provides a complete range of services that include diagnosis, treatment and follow-up for patients with liver and bile duct disorders",
+    "Description2": "-Provides a complete range of services that include diagnosis, treatment and follow-up for patients with liver and bile duct disorders",
     "DescriptImg": "https://i.ibb.co/z42q6gk/d-7.jpg"
   },
   {
@@ -65,8 +65,8 @@
     "CoverImg": "https://i.ibb.co/mX5rsyt/8.jpg",
     "Title": "Digestive Disease (GI) Center",
     "Description1": "A multidisciplinary team that treats abnormalities of the gastrointestinal tract",
-    "Description2": "Has a team of experts with years of experience treating many kinds of digestive diseases",
-    "Description3": "State-of-the-art laboratory and pathology facilities which result in quick lab tests and shorter waiting times between appointments and treatment",
+    "Description2": "-Has a team of experts with years of experience treating many kinds of digestive diseases",
+    "Description3": "-State-of-the-art laboratory and pathology facilities which result in quick lab tests and shorter waiting times between appointments and treatment",
     "DescriptImg": "https://i.ibb.co/1v1mtST/d-8.jpg"
   }
 ]
