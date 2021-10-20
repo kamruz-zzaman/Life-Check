@@ -22,7 +22,7 @@ const LogIn = () => {
         e.preventDefault();
     }
     if (user.email) {
-        history.goBack();
+        history.push('/home');
     }
 
     return (
