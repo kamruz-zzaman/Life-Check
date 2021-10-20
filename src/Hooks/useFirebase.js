@@ -74,6 +74,8 @@ const useFirebase = () => {
         });
         return () => unsubscribe;
     }, []);
+
+    // details fetching
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('./Services.json')

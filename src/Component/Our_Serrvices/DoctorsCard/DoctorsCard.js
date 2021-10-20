@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const DoctorsCard = ({ doctor }) => {
+    // get data
     const { Img, Name, Specialist } = doctor
     return (
         <div className=' p-2 shadow-2xl h-full rounded-2xl hover:bg-gray-900 hover:text-white transition ease-in duration-700'>

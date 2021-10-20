@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import logo from '../../Images/Logo/Logo.png'
 
 const LogIn = () => {
-    const history = useHistory();
-    const { user, isLoading, signinWithGoogle, signInWithEmail } = useAuth();
-
+    // get data
+    const { signinWithGoogle, signInWithEmail } = useAuth();
+    // decleare state
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    // get and set state
     const saveEmail = (e) => {
         setEmail(e.target.value);
     }
@@ -19,11 +19,6 @@ const LogIn = () => {
     const handleLogin = (e) => {
         signInWithEmail(email, password);
         e.preventDefault();
-    }
-    if (user.email) {
-        if (isLoading) {
-            history.goBack();
-        }
     }
     return (
         <div className='flex justify-center items-center m-4' >

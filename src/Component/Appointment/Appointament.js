@@ -3,6 +3,7 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 
 const Appointament = () => {
+    // on button submit go to success path
     const history = useHistory();
     const handleBtn = () => {
         history.push('/success')

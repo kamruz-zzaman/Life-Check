@@ -16,12 +16,14 @@ import Details from './Component/MoreDetails/Dtails/Dtails';
 import Support from './Component/Support/Support';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import { AuthProvider } from './Component/context/Authprovider';
+import ScrollToTop from './Component/Scrolltop/Scrolltop';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
+          <ScrollToTop />
           <Header></Header>
           <Switch>
             <Route exact path='/'>

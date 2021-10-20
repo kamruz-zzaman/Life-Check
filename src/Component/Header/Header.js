@@ -4,6 +4,7 @@ import useAuth from '../../Hooks/useAuth';
 import logo from '../../Images/Logo/Logo.png'
 
 const Header = () => {
+    // get data
     const { user, logOut } = useAuth();
     return (
         <header className="text-gray-400 bg-gray-900 body-font sticky top-0">

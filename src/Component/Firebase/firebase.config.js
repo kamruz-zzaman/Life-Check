@@ -1,3 +1,4 @@
+// firebase config file
 const firebaseConfig = {
     apiKey: "AIzaSyBGiEcRzTchmATPK5FBTTqEqRdh1JvCBDc",
     authDomain: "life-check-bdfbf.firebaseapp.com",

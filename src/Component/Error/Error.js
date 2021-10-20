@@ -1,6 +1,6 @@
 import React from 'react';
 import ErrorImg from '../../Images/Error/404Error.svg'
-
+// error data
 const Error = () => {
     return (
         <div className='flex justify-center'>

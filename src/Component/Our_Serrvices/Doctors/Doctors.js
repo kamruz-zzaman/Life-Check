@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import DoctorsCard from '../DoctorsCard/DoctorsCard';
 
 const Doctors = () => {
+    // get data 
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('./Doctors.json')

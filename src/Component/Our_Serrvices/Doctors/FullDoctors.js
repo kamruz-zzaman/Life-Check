@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import DoctorsCard from '../DoctorsCard/DoctorsCard';
 
 const FullDoctors = () => {
+    // get data
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('./Doctors.json')
