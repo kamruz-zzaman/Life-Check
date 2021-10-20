@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import useFirebase from '../../Hooks/useFirebase';
+import useAuth from '../../Hooks/useAuth';
 import logo from '../../Images/Logo/Logo.png'
 
 const Header = () => {
-    const { user, logOut } = useFirebase();
+    const { user, logOut } = useAuth();
     return (
         <header className="text-gray-400 bg-gray-900 body-font sticky top-0">
             <div className="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">

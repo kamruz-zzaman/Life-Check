@@ -1,8 +1,5 @@
 import React, { createContext } from 'react'
 import useFirebase from '../../Hooks/useFirebase';
-import firebaseInitialize from '../Firebase/firebase.init';
-
-firebaseInitialize();
 
 const AuthContext = createContext();
 const AuthProvider = ({ children }) => {

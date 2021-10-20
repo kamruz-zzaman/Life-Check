@@ -1,26 +1,20 @@
-import React, { useEffect, useState } from 'react';
-// import { useParams } from 'react-router';
+import useAuth from '../../../Hooks/useAuth';
+import { useParams } from 'react-router';
 import MoreCard from '../MoreCard/MoreCard';
 
 const Details = () => {
-    // const { id } = useParams;
-    const [services, setServices] = useState([]);
-    useEffect(() => {
-        fetch('./Services.json')
-            .then(res => res.json())
-            .then(data => setServices(data))
-    }, [])
+    const { Key } = useParams();
+    const { services } = useAuth();
     return (
-        <div>
-            {services.map(service =>
+        <div >
+            {services.filter((x) => x.Key === parseInt(Key)).map((service) =>
                 <MoreCard
                     key={service.Key}
-                    // service={service.Key === id ? service : ''}
                     service={service}
                 >
                 </MoreCard>
-            )}
 
+            )}
         </div >
     );
 };

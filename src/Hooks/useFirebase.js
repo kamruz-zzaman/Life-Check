@@ -23,6 +23,9 @@ const useFirebase = () => {
         signInWithPopup(auth, provider)
             .then((result) => setUser(result))
             .catch((err) => console.log(err))
+            .finally(() => {
+                window.location.reload();
+            });
 
     };
     // User Login with Email
@@ -30,6 +33,10 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => { setUser(result.user) })
             .catch((err) => alert(err.message))
+            .finally(() => {
+                setIsLoading(false);
+                window.location.reload();
+            });
 
     };
 
@@ -40,6 +47,10 @@ const useFirebase = () => {
                 let errorMessage = error.message.split("(")[1].split(")")[0];
                 alert(errorMessage);
             })
+            .finally(() => {
+                setIsLoading(false);
+                window.location.reload();
+            });
     };
 
     // User Logout
@@ -63,6 +74,12 @@ const useFirebase = () => {
         });
         return () => unsubscribe;
     }, []);
+    const [services, setServices] = useState([]);
+    useEffect(() => {
+        fetch('./Services.json')
+            .then(res => res.json())
+            .then(data => setServices(data))
+    }, [])
 
     return {
         user,
@@ -70,6 +87,7 @@ const useFirebase = () => {
         signInWithEmail,
         signUpWithEmail,
         logOut,
+        services,
         isLoading
     };
 };

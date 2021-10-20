@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../Images/Logo/Logo.png'
-import useFirebase from '../../Hooks/useFirebase';
+import useAuth from '../../Hooks/useAuth';
 
 const Regestration = () => {
-    const { signinWithGoogle, signUpWithEmail } = useFirebase();
+    const { signinWithGoogle, signUpWithEmail } = useAuth();
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

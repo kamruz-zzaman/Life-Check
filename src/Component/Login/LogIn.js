@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-// import useAuth from '../../Hooks/useAuth';
-import useFirebase from '../../Hooks/useFirebase';
+import useAuth from '../../Hooks/useAuth';
 import logo from '../../Images/Logo/Logo.png'
 
 const LogIn = () => {
     const history = useHistory();
-    const { user, isLoading, signinWithGoogle, signInWithEmail } = useFirebase();
+    const { user, isLoading, signinWithGoogle, signInWithEmail } = useAuth();
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

@@ -1,8 +1,12 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 const Appointament = () => {
+    const history = useHistory();
+    const handleBtn = () => {
+        history.push('/success')
+    }
     return (
         <div className='mb-5'>
             <h2 className="text-4xl font-bold text-center my-4">
@@ -47,7 +51,7 @@ const Appointament = () => {
                         </div>
                     </div>
                     <div className="flex justify-center">
-                        <button className='py-2 px-3 rounded-lg bg-blue-500 mt-5 hover:bg-blue-900 hover:text-white'>Confirm</button>
+                        <button onClick={handleBtn} className='py-2 px-3 rounded-lg bg-blue-500 mt-5 hover:bg-blue-900 hover:text-white'>Confirm</button>
                     </div>
 
                 </form>
