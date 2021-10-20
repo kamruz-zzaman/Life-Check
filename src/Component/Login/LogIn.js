@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import logo from '../../Images/Logo/Logo.png'
 
 const LogIn = () => {
+    const history = useHistory();
     // get data
-    const { signinWithGoogle, signInWithEmail } = useAuth();
+    const { user, signinWithGoogle, signInWithEmail } = useAuth();
     // decleare state
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -20,6 +21,10 @@ const LogIn = () => {
         signInWithEmail(email, password);
         e.preventDefault();
     }
+    if (user.email) {
+        history.goBack();
+    }
+
     return (
         <div className='flex justify-center items-center m-4' >
             <div className=' p-10 rounded-xl shadow-xl'>
